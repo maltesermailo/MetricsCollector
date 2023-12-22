@@ -1,0 +1,13 @@
+[package]
+name = "MetricsCollector"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-std = { version = "1", features = ["attributes"] }
+hyper = { version = "0.14.16", features = ["server", "http1", "tcp"] }
+prometheus-client = "0.22.0"
+tokio = { version = "1", features = ["rt", "rt-multi-thread", "net", "macros", "signal"] }
+sysinfo = "0.29.11"
