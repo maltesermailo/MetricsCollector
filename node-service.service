@@ -1,0 +1,12 @@
+[Unit]
+Description=Provides node statistics on an endpoint
+After=network.target
+
+[Service]
+User=root
+Group=root
+
+ExecStart=/mnt/d/Users/Jannik/RustroverProjects/MetricsCollector/target/debug/MetricsCollector
+
+[Install]
+WantedBy=multi-user.target
